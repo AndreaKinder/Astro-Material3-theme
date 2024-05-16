@@ -97,7 +97,7 @@ const { title, subTitle } = Astro.props;
         background-size: 400% 400%;
 		position: relative;
 		animation: cambiar 10s ease-in-out infinite; 
-        width: 80%;
+        width: 70%;
     }
     #bannerAnimation{
         display: none;
@@ -107,5 +107,72 @@ const { title, subTitle } = Astro.props;
 		animation: cambiar 10s ease-in-out infinite;
         font-family: monospace;    
     }
-    
+
+ @media (max-width: 948px) {
+    #bodyContainer{
+       padding: 0%;
+    }
+    .main-container {
+        height: 0.5%;
+    }
+    #home {
+        height: 100px;
+    }
+    .add-responsive{
+        unicode-bidi: isolate;
+        font-size: 1em;
+    }
+
+    .banner {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+        padding: 10px;
+        min-width: 200px;
+        flex-wrap: wrap;
+        min-height: 5rem;
+    }
+    .banner > div {
+        padding: 10px;
+        height: 150px; 
+        width: 80%;
+        border-radius: 25px;
+        text-align: center;
+        font-size: 1.5em;
+        margin: 10px 10px;
+        text-align: center;
+    }
+    .banner svg{
+        height: 25px;
+        width: 25px;
+    }
+    #bannerAnimation{
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .banner {
+       margin-top: 20px;
+    }
+    .banner > div {
+        width: 90%;
+        margin: 20px 10px;
+    }
+    #bodyContainer {
+        margin: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner{
+        margin-top: 30px;
+    }
+    .banner > div {
+        width: 80%;
+        margin: 10px auto;
+    }
+}
 </style>

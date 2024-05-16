@@ -1,0 +1,40 @@
+---
+import CardProgects from "./CardProgects.astro";
+const TITLE1 = "PROJECT"
+const BODY1 = "Hi World"
+const LINK1 = "#"
+---
+<div id="Projects" class="classificacion">
+    <h1>Projects</h1>
+    <div id="container-projects">
+        <CardProgects 
+        title={TITLE1} 
+        body={BODY1}
+        href={LINK1}
+        />
+        <CardProgects 
+        title={TITLE1} 
+        body={BODY1}
+        href={LINK1}
+        />
+        <CardProgects 
+        title={TITLE1} 
+        body={BODY1}
+        href={LINK1}
+        />
+    </div>
+</div>
+<style>
+    div{    
+        padding: 20px;
+        font-size: 18px;
+    }
+    h1{
+     font-size: 3em;
+     margin-bottom: 0;
+    }
+    #container-projects{
+        display: flex;
+        flex-wrap: wrap;
+    }
+</style>

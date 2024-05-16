@@ -1,0 +1,45 @@
+---
+//Logic to form: https://www.emailjs.com/
+---
+<div id="contact" class="classificacion">
+    <h1>Contact</h1>
+    <form id="contact-form">
+        <input type="hidden" name="contact_number">
+        <label>Name</label>
+        <input type="text" name="user_name">
+        <label>Email</label>
+        <input type="email" name="user_email">
+        <label>Message</label>
+        <textarea name="message"></textarea>
+        <input id="submit" type="submit" value="Send">
+    </form>
+</div>
+<style>
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+input{
+    width: 100%;
+    height: 20px;
+    border-radius: 25px;
+    font-size: 18px;
+    height: 40px;
+    }
+textarea{
+    width: 100%;
+    height: 300px;
+    border-radius: 25px;
+}
+div{
+        padding: 20px;
+        font-size: 18px;
+    }
+ h1{
+     font-size: 3em;
+     margin-bottom: 0;
+}
+</style>

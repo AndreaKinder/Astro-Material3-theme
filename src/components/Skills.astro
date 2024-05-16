@@ -1,0 +1,34 @@
+---
+import Card from "./Card.astro"
+
+const TITLE1 = "Skill"
+const BODY1 = "Text descriptive Skill"
+const LINK1 = "#"
+
+---
+<div id="SKills" class="classificacion">
+    <h1>Skills</h1>
+    <div id="skillList">
+        <Card title={TITLE1} body={BODY1} href={LINK1}/>
+        <Card title={TITLE1} body={BODY1} href={LINK1}/>
+        <Card title={TITLE1} body={BODY1} href={LINK1}/>
+        <Card title={TITLE1} body={BODY1} href={LINK1}/>
+        <Card title={TITLE1} body={BODY1} href={LINK1}/>
+
+    </div>
+</div>
+<style>
+    div{
+        
+        padding: 20px;
+        font-size: 18px;
+    }
+    h1{
+     font-size: 3em;
+     margin-bottom: 0;
+    }
+    #skillList{
+        display: flex;
+        flex-wrap: wrap;
+    }
+</style>

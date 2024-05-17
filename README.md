@@ -1,5 +1,6 @@
 This theme is a sleek and modern implementation of Google's Material 3 design principles for Android apps. Provides a consistent and engaging visual experience for users, following Material design guidelines.
 
+
 ## Key Features
 - **Consistent design**: The theme follows Material Design guidelines, ensuring a consistent look and feel across the entire app.
 - **Adaptability**: It has been optimized to work on different screen sizes and devices, from phones to tablets.
